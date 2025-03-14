@@ -17,7 +17,7 @@ function applique(f, tab) {
 msgs = [];
 
 function update() {
-    fetch('https://a839ce9a-6ee5-40de-b391-0d6942eeab26-00-3ehdhb179sb9e.riker.replit.dev/msg/getAll')
+    fetch('https://a-i-rticleshare-back.onrender.com/msg/getAll')
         .then(response => response.json())
         .then(data => {
             msgs = data; // Mettre à jour la liste des messages
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 
-fetch('https://a839ce9a-6ee5-40de-b391-0d6942eeab26-00-3ehdhb179sb9e.riker.replit.dev/msg/getAll')
+fetch('https://a-i-rticleshare-back.onrender.com/msg/getAll')
     .then(response => response.json())
     .then(data => {
         msgs = data; // Stocker les messages récupérés
@@ -120,7 +120,7 @@ document.getElementById("submitMessage").addEventListener("click", function () {
         image: "img/arxiv.png"
     });
 
-    let requestUrl = `https://a839ce9a-6ee5-40de-b391-0d6942eeab26-00-3ehdhb179sb9e.riker.replit.dev/msg/post?${queryParams}`;
+    let requestUrl = `https://a-i-rticleshare-back.onrender.com/msg/post?${queryParams}`;
 
     // Envoyer la requête au serveur
     fetch(requestUrl)
