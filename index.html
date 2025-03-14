@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Partage d'Articles Scientifiques en IA</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>A(I)rticleShare</h1>
+    </header>
+
+    <div class="articles">
+        <h2>Articles Partagés</h2>
+        <ul>
+            <li>
+                <a href="https://arxiv.org/pdf/2502.09992" target="_blank">Large Language Diffusion Models</a><br>
+                <img src="img/LLDM.png" alt="Preview LLDM" width="150">
+                <div class="meta">Posté par : JL32 le 07/03/2025 à 10:35</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/pdf/2412.08821" target="_blank">Large Concept Models</a><br>
+                <img src="img/LCM.png" alt="Preview LCM" width="150">
+                <div class="meta">Posté par : HG34 le 07/03/2025 à 10:35</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/pdf/2501.12948" target="_blank">DeepSeek-R1: Incentivizing Reasoning
+                    Capability in LLMs via Reinforcement Learning</a><br>
+                <img src="img/Deepseek.png" alt="Preview Deepseek-R1" width="150">
+                <div class="meta">Posté par : HJDZ le 07/03/2025 à 10:35</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/pdf/2401.04088" target="_blank">Mixtral of Experts</a><br>
+                <img src="img/Mixtral.png" alt="Preview Mixtral" width="150">
+                <div class="meta">Posté par : TEAH2 le 07/03/2025 à 10:35</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/pdf/2205.14135" target="_blank">FlashAttention: Fast and Memory-Efficient
+                    Exact Attention with IO-Awareness</a><br>
+                <img src="img/FlashAttention.png" alt="Preview FlashAttention" width="150">
+                <div class="meta">Posté par : HZE12 le 07/03/2025 à 10:35</div>
+            </li>
+        </ul>
+        <br><br />
+        <button id="updateButton">Mise à jour</button>
+    </div>
+
+    <div class="partage">
+        <h2>Partager un Nouvel Article</h2>
+
+        <input type="text" id="pseudo" placeholder="Pseudo">
+
+        <input type="text" id="articleTitle" placeholder="Titre de l'article">
+
+        <input type="text" id="articleLink" placeholder="Lien de l'article">
+
+        <button id="submitMessage">Envoyer</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
